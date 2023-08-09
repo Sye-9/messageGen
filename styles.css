@@ -15,7 +15,7 @@ h1{
 
 /* Button */
 
-.genBtn1 {
+#genBtn {
 	box-shadow:inset 0px 1px 0px 0px #fce2c1;
 	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
 	background-color:#ffc477;
@@ -32,26 +32,34 @@ h1{
 	text-shadow:0px 1px 0px #cc9f52;
     transition: all 0.3s ease
 }
-.genBtn1:hover {
+#genBtn:hover {
 	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
 	background-color:#fb9e25;
     transform: rotate(360deg);
     transform: scale(1.1);
 }
-.genBtn1:active {
+#genBtn:active {
 	position:relative;
 	top:1px;
 }
 
 /* Hidden Messages */
-.hiddenMessage{
-    border: solid 1px black;
+#hiddenMessage{
+    /* border: solid 1px black; */
+    /* border will appear after event listener */
     border-radius: 30px;
     margin: 20px;
     padding: 10px;
     text-align: center;
     font-size: 20px;
     font-family: 'Lumanosimo', cursive;
+    display: hidden;
 }
+#hiddenMessage:active {
+    display: none;
+}
+
+
+
 
 
